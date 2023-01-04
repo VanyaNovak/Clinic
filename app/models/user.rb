@@ -4,6 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable
 
+  validates :first_name, :last_name, presence: true
+
+
   def will_save_change_to_email?
     false
   end
