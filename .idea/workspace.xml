@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbb34b6a-7379-48ed-94b2-d4f4c7e7fc76" name="Changes" comment="fix sassc" />
+    <list default="true" id="cbb34b6a-7379-48ed-94b2-d4f4c7e7fc76" name="Changes" comment="fix prod">
+      <change afterPath="$PROJECT_DIR$/app/views/layouts/_flash.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/public_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/public_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,19 +38,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ruby.rails.projectView.checked": "true",
+    "ruby.structure.view.model.defaults.configured": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="RackRunConfigurationType" factoryName="Rack">
       <RACK_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -48,11 +60,7 @@
       <RACK_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RACK_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
       <RACK_CONFIG_SETTINGS_ID NAME="PORT" VALUE="9292" />
       <RACK_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
@@ -69,11 +77,7 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
@@ -120,8 +124,30 @@
       <updated>1672150514591</updated>
       <workItem from="1672150519273" duration="621000" />
       <workItem from="1672776813177" duration="1951000" />
+      <workItem from="1672845358486" duration="8911000" />
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add models">
+      <created>1672848002732</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672848002732</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add profile and fix prod">
+      <created>1672849350406</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672849350406</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix prod">
+      <created>1672849405709</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672849405709</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +166,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix sassc" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix sassc" />
+    <MESSAGE value="add models" />
+    <MESSAGE value="add profile and fix prod" />
+    <MESSAGE value="fix prod" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix prod" />
   </component>
 </project>
