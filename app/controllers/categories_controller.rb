@@ -1,5 +1,5 @@
-class CategoriesController < ApplicationController
+class CategoriesController < HomeController
   def index
-    @categories = Category.all
+    @categories = Category.all.includes(:doctors)
   end
 end

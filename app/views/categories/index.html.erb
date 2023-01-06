@@ -1,0 +1,6 @@
+<% @categories.each do |category| %>
+  <%= category.title %>
+  <% category.doctors.each do |doctor| %>
+    <%= [doctor.first_name, doctor.last_name].split(" ") %>
+  <% end %>
+<% end %>
