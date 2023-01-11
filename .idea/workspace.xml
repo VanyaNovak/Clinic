@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbb34b6a-7379-48ed-94b2-d4f4c7e7fc76" name="Changes" comment="add admin page">
-      <change afterPath="$PROJECT_DIR$/app/views/categories/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
+    <list default="true" id="cbb34b6a-7379-48ed-94b2-d4f4c7e7fc76" name="Changes" comment="add simple profile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/categories_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/categories_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dashboards/doctor_dashboard.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboards/doctor_dashboard.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dashboards/patient_dashboard.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboards/patient_dashboard.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/appointment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/appointment.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/categories/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/categories/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +135,11 @@
       <workItem from="1672150519273" duration="621000" />
       <workItem from="1672776813177" duration="1951000" />
       <workItem from="1672845358486" duration="18368000" />
-      <workItem from="1672919756001" duration="11641000" />
+      <workItem from="1672919756001" duration="12439000" />
+      <workItem from="1673178792133" duration="614000" />
+      <workItem from="1673278991044" duration="813000" />
+      <workItem from="1673445486785" duration="1199000" />
+      <workItem from="1673446994343" duration="2224000" />
     </task>
     <task id="LOCAL-00004" summary="add models">
       <created>1672848002732</created>
@@ -187,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673011523618</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add simple profile">
+      <created>1673015085911</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673015085911</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +231,7 @@
     <MESSAGE value="fix auth &amp; add design for auth" />
     <MESSAGE value="fix some bugs" />
     <MESSAGE value="add admin page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add admin page" />
+    <MESSAGE value="add simple profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="add simple profile" />
   </component>
 </project>

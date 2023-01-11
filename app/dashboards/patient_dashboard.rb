@@ -30,6 +30,8 @@ class PatientDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = %i[
     id
+    first_name
+    last_name
     appointments
     email
     encrypted_password

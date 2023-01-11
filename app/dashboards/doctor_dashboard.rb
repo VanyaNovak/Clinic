@@ -31,6 +31,8 @@ class DoctorDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = %i[
     id
+    first_name
+    last_name
     appointments
     category
     email
