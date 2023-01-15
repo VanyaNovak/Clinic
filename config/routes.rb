@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   resources :categories
+  post 'appointments', to: 'appointments#create'
   resources :users
   resources :appointments
 end

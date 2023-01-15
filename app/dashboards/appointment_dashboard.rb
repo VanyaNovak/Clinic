@@ -13,6 +13,7 @@ class AppointmentDashboard < Administrate::BaseDashboard
     patient: Field::BelongsTo,
     recommendation: Field::Text,
     status: Field::String,
+    title: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -26,7 +27,8 @@ class AppointmentDashboard < Administrate::BaseDashboard
     id
     doctor
     patient
-    recommendation
+    title
+    status
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -35,6 +37,7 @@ class AppointmentDashboard < Administrate::BaseDashboard
     id
     doctor
     patient
+    title
     recommendation
     status
     created_at
@@ -47,6 +50,7 @@ class AppointmentDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = %i[
     doctor
     patient
+    title
     recommendation
     status
   ].freeze

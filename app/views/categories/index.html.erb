@@ -19,7 +19,7 @@
             </p>
           </div>
           <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-            New appointment
+            <%= link_to "New appointment", new_appointment_path(doctor_id: doctor.id, patient_id: current_user.id) %>
           </div>
         </div>
       </li>

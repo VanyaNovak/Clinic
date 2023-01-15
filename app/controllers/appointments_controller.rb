@@ -1,6 +1,6 @@
 class AppointmentsController < HomeController
   def index
-    @appointments = Appointment.where(doctor_id: current_user.id) || Appointment.where(patient_id: current_user.id)
+    current_user.doctor? ? @appointments = Appointment.where(doctor_id: current_user.id) : @appointments = Appointment.where(patient_id: current_user.id)
   end
 
   def show
@@ -8,14 +8,23 @@ class AppointmentsController < HomeController
   end
 
   def new
-    appointment = Appointment.create(appointment_params)
+    @appointment = Appointment.new
+  end
 
-    redirect_to appointment_path
+  def create
+    @appointment = Appointment.new(appointment_params)
+
+    if @appointment.save
+      redirect_to appointment_path(@appointment.id)
+    else
+      flash[:notice] = "Appointment creation failed"
+      render :new
+    end
   end
 
   private
 
   def appointment_params
-    params.require(:appointment).permit(:title, :doctor_id, :patient_id)
+    params.require(:appointment).permit(:doctor_id, :patient_id, :title)
   end
 end
