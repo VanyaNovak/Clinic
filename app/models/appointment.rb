@@ -5,14 +5,10 @@ class Appointment < ApplicationRecord
   validates :title, presence: true
 
   # states
-  NEW = "New"
-  COMPLETED = "Completed"
+  NEW = "new"
+  COMPLETED = "completed"
 
-  def completed_appointment?
+  def completed?
     status == COMPLETED
-  end
-
-  def new_appointment?
-    status == NEW
   end
 end

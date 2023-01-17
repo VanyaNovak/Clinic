@@ -6,17 +6,19 @@
   <ul class=" divide-y divide-gray-200 dark:divide-gray-700">
     <% category.doctors.each do |doctor| %>
       <li class="pb-3 sm:pb-4">
+        <%= link_to user_path(doctor) do %>
         <div class="flex items-center space-x-4">
           <div class="flex-shrink-0">
             <%= image_tag doctor.display_avatar, class: "w-8 h-8 rounded-full" %>
           </div>
           <div class="flex-1 min-w-0">
             <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-              <%= link_to doctor.first_name + " " + doctor.last_name, user_path(doctor) %>
+              <%= doctor.first_name + " " + doctor.last_name %>
             </p>
             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
               <%= doctor.phone_number %>
             </p>
+        <% end %>
           </div>
           <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
             <%= link_to "New appointment", new_appointment_path(doctor_id: doctor.id, patient_id: current_user.id) %>

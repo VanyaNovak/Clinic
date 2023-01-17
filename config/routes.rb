@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
   resources :categories
   post 'appointments', to: 'appointments#create'
+  put 'appointments', to: 'appointments#add_recommendation'
   resources :users
   resources :appointments
 end

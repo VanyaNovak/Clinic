@@ -1,8 +1,16 @@
 <%= form_with model: @appointment, url: appointments_path, method: :post, local: true do |f| %>
 
-  <%= f.text_field :title %>
-  <%= f.hidden_field :doctor_id, value: params[:doctor_id] %>
-  <%= f.hidden_field :patient_id, value: params[:patient_id] %>
-  <%= f.submit %>
-
+  <div class="grid-rows-3">
+    <div class="mb-4">
+      Appointment reason
+    </div>
+    <div>
+      <%= f.text_field :title %>
+      <%= f.hidden_field :doctor_id, value: params[:doctor_id] %>
+      <%= f.hidden_field :patient_id, value: params[:patient_id] %>
+    </div>
+    <div class="mt-4">
+      <%= f.submit "Create appointment", class: 'inline-block bg-blue-600 text-white text-sm px-4 py-2 leading-none border rounded border-white hover:border-transparent hover:bg-blue-500 mt-4 lg:mt-0 mr-6' %>
+    </div>
+  </div>
 <% end %>

@@ -14,7 +14,7 @@ class Ability
 
     if user.doctor?
       can :read, Appointment
-      can :update, Appointment
+      can :add_recommendation, Appointment
     end
   end
 end

@@ -1,2 +1,70 @@
-<%= @appointment.title %>
-<%= @appointment.status %>
+<div class="grid-rows-3 my-8">
+  <div class="text-gray-700">
+    Patient
+    <div class="flex-shrink-0">
+      <%= image_tag url_for(@appointment.patient.display_avatar), class: "w-8 h-8 rounded-full"%>
+    </div>
+    <div class="grid md:grid-cols-2 text-sm">
+      <div class="grid grid-cols-2">
+        <div class="px-4 py-2 font-semibold">First Name</div>
+        <div class="px-4 py-2"> <%= @appointment.patient.first_name %> </div>
+      </div>
+      <div class="grid grid-cols-2">
+        <div class="px-4 py-2 font-semibold">Last Name</div>
+        <div class="px-4 py-2"><%= @appointment.patient.last_name %></div>
+      </div>
+      <div class="grid grid-cols-2">
+        <div class="px-4 py-2 font-semibold">Phone Number</div>
+        <div class="px-4 py-2"><%= @appointment.patient.phone_number %></div>
+      </div>
+    </div>
+  </div>
+  <div class="text-gray-700">
+    Doctor
+    <div class="flex-shrink-0">
+      <%= image_tag url_for(@appointment.doctor.display_avatar), class: "w-8 h-8 rounded-full"%>
+    </div>
+    <div class="grid md:grid-cols-2 text-sm">
+      <div class="grid grid-cols-2">
+        <div class="px-4 py-2 font-semibold">First Name</div>
+        <div class="px-4 py-2"> <%= @appointment.doctor.first_name %> </div>
+      </div>
+      <div class="grid grid-cols-2">
+        <div class="px-4 py-2 font-semibold">Last Name</div>
+        <div class="px-4 py-2"><%= @appointment.doctor.last_name %></div>
+      </div>
+      <div class="grid grid-cols-2">
+        <div class="px-4 py-2 font-semibold">Phone Number</div>
+        <div class="px-4 py-2"><%= @appointment.doctor.phone_number %></div>
+      </div><div class="grid grid-cols-2">
+        <div class="px-4 py-2 font-semibold">Category</div>
+        <div class="px-4 py-2"><%= @appointment.doctor.category_name %></div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-5">
+    <div class="grid-rows-2">
+      <div>
+        <%= "Appointment status: #{@appointment.status}" %>
+      </div>
+      <div>
+        <% if current_user.patient? || @appointment.completed? %>
+          <div class="grid-rows-2">
+            <div class="my-4">Recommendation:</div>
+            <div>
+              <%= text_area(:appointment, :recommendation, readonly: true,class_names: "block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500") %>
+            </div>
+          </div>
+        <% elsif can? :add_recommendation, Appointment %>
+          <%= form_with model: @appointment, url: appointments_path, method: :put, local: true do |f| %>
+            <%= f.hidden_field :appointment_id, value: @appointment.id %>
+            <%= f.text_area :recommendation, class: "block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" %>
+            <div class="mt-4">
+              <%= f.submit "Add recommendation", class: 'inline-block bg-blue-600 text-white text-sm px-4 py-2 leading-none border rounded border-white hover:border-transparent hover:bg-blue-500 mt-4 lg:mt-0 mr-6' %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

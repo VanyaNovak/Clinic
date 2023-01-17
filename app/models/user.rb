@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   validates :first_name, presence: true
   validates :last_name, presence: true
-  validates :phone_number, presence: true, uniqueness: true
+  validates :phone_number, presence: true, uniqueness: true, format: { with: /\A(?:\+?\d{1,3}\s*-?)?\(?(?:\d{3})?\)?[- ]?\d{3}[- ]?\d{4}\z/ }
 
   def doctor?
     type == 'Doctor'
