@@ -5,9 +5,11 @@
     </span>
   </div>
   <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-    <div class="text-sm lg:flex-grow">
-      <%= link_to "Doctors by category", categories_path, class: "inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0 mr-6" %>
-    </div>
+    <% if can? :read, Category %>
+      <div class="text-sm lg:flex-grow">
+        <%= link_to "Doctors by category", categories_path, class: "inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0 mr-6" %>
+      </div>
+    <% end %>
     <div class="text-sm lg:flex-grow">
       <%= link_to "My appointments", appointments_path, class: "inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0 mr-6" %>
     </div>

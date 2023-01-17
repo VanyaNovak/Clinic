@@ -1,4 +1,5 @@
 class AppointmentsController < HomeController
+  load_and_authorize_resource # CanCanCan
   def index
     current_user.doctor? ? @appointments = Appointment.where(doctor_id: current_user.id) : @appointments = Appointment.where(patient_id: current_user.id)
   end
@@ -17,7 +18,7 @@ class AppointmentsController < HomeController
     if @appointment.save
       redirect_to appointment_path(@appointment.id)
     else
-      flash[:notice] = "Appointment creation failed"
+      flash.now[:notice] = "Appointment creation failed"
       render :new
     end
   end

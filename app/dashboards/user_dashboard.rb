@@ -11,8 +11,10 @@ class UserDashboard < Administrate::BaseDashboard
     id: Field::Number,
     email: Field::String,
     encrypted_password: Field::String,
+    password: Field::String,
     first_name: Field::String,
     last_name: Field::String,
+    avatar: Field::ActiveStorage,
     phone_number: Field::String,
     remember_created_at: Field::DateTime,
     reset_password_sent_at: Field::DateTime,
@@ -59,6 +61,7 @@ class UserDashboard < Administrate::BaseDashboard
     encrypted_password
     first_name
     last_name
+    avatar
     phone_number
     remember_created_at
     reset_password_sent_at

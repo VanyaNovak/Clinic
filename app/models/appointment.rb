@@ -2,6 +2,8 @@ class Appointment < ApplicationRecord
   belongs_to :doctor
   belongs_to :patient
 
+  validates :title, presence: true
+
   # states
   NEW = "New"
   COMPLETED = "Completed"

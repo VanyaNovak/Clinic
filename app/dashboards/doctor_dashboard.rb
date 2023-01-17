@@ -13,8 +13,10 @@ class DoctorDashboard < Administrate::BaseDashboard
     category: Field::BelongsTo,
     email: Field::String,
     encrypted_password: Field::String,
+    password: Field::String,
     first_name: Field::String,
     last_name: Field::String,
+    avatar: Field::ActiveStorage,
     phone_number: Field::String,
     remember_created_at: Field::DateTime,
     reset_password_sent_at: Field::DateTime,
@@ -65,8 +67,10 @@ class DoctorDashboard < Administrate::BaseDashboard
     category
     email
     encrypted_password
+    password
     first_name
     last_name
+    avatar
     phone_number
     remember_created_at
     reset_password_sent_at

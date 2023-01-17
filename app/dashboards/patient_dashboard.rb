@@ -12,8 +12,10 @@ class PatientDashboard < Administrate::BaseDashboard
     appointments: Field::HasMany,
     email: Field::String,
     encrypted_password: Field::String,
+    password: Field::String,
     first_name: Field::String,
     last_name: Field::String,
+    avatar: Field::ActiveStorage,
     phone_number: Field::String,
     remember_created_at: Field::DateTime,
     reset_password_sent_at: Field::DateTime,
@@ -65,6 +67,8 @@ class PatientDashboard < Administrate::BaseDashboard
     first_name
     last_name
     phone_number
+    password
+    avatar
     remember_created_at
     reset_password_sent_at
     reset_password_token

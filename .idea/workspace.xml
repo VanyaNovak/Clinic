@@ -4,15 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbb34b6a-7379-48ed-94b2-d4f4c7e7fc76" name="Changes" comment="add simple profile">
-      <change afterPath="$PROJECT_DIR$/app/views/appointments/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/appointments/show.html.erb" afterDir="false" />
+    <list default="true" id="cbb34b6a-7379-48ed-94b2-d4f4c7e7fc76" name="Changes" comment="add appointment creation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/config/manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/config/manifest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/appointments_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/appointments_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dashboards/appointment_dashboard.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboards/appointment_dashboard.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/appointments/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/appointments/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/registrations_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dashboards/doctor_dashboard.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboards/doctor_dashboard.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dashboards/patient_dashboard.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboards/patient_dashboard.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dashboards/user_dashboard.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboards/user_dashboard.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/ability.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/ability.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/appointment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/appointment.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/categories/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/categories/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/credentials.yml.enc" beforeDir="false" afterPath="$PROJECT_DIR$/config/credentials.yml.enc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/storage.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/storage.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +154,9 @@
       <workItem from="1673526910240" duration="1469000" />
       <workItem from="1673540568769" duration="4458000" />
       <workItem from="1673650518889" duration="1239000" />
-      <workItem from="1673735834024" duration="5796000" />
+      <workItem from="1673735834024" duration="6187000" />
+      <workItem from="1673783693581" duration="599000" />
+      <workItem from="1673876210594" duration="6836000" />
     </task>
     <task id="LOCAL-00004" summary="add models">
       <created>1672848002732</created>
@@ -211,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673563409716</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add appointment creation">
+      <created>1673744779243</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1673744779243</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +263,7 @@
     <MESSAGE value="fix some bugs" />
     <MESSAGE value="add admin page" />
     <MESSAGE value="add simple profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="add simple profile" />
+    <MESSAGE value="add appointment creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add appointment creation" />
   </component>
 </project>

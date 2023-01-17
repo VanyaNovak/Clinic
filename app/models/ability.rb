@@ -4,11 +4,17 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
-      return unless user.patient?
-      can :create, Appointment
-      can :read, Category
+    return if user.nil?
 
-      return unless user.doctor?
-      can :manage, Appointment
+    if user.patient?
+      can :create, Appointment
+      can :read, Appointment
+      can :read, Category
+    end
+
+    if user.doctor?
+      can :read, Appointment
+      can :update, Appointment
+    end
   end
 end
