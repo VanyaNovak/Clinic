@@ -15,14 +15,14 @@ class AppointmentsController < BaseController
   end
 
   def create
-    #return flash.now("Doctor is busy, please try again later") if Doctor.find(appointment_params[:doctor_id]).busy?
     @appointment = Appointment.new(appointment_params)
 
     if @appointment.save
       redirect_to appointment_path(@appointment.id)
     else
-      flash.now[:notice] = "Appointment creation failed"
-      render :new
+      flash[:alert] = @appointment.errors.first.type
+
+      redirect_to categories_path
     end
   end
 
