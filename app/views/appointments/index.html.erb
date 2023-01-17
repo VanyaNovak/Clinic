@@ -19,8 +19,12 @@
                   </div>
                 <% end %>
                 <div class="flex-1 min-w-0">
-                  <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                    <%= appointment.title %>
+                  <h1>
+                    <%= "Appointment reason: #{appointment.title}" %>
+                  </h1>
+                  <p class="text-sm font-lighttext-gray-900 truncate dark:text-white">
+                    <% person = current_user.doctor? ? appointment.patient : appointment.doctor %>
+                    <%= [person.type, person.full_name].join(": ") %>
                   </p>
                   <p class="text-sm text-gray-500 truncate dark:text-gray-400">
                   </p>

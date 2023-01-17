@@ -16,6 +16,10 @@ class User < ApplicationRecord
     type == 'Patient'
   end
 
+  def full_name
+    [first_name, last_name].join(" ")
+  end
+
   def display_avatar
     if avatar.attached?
       avatar

@@ -8,13 +8,24 @@ class Ability
 
     if user.patient?
       can :create, Appointment
-      can :read, Appointment
-      can :read, Category
+      can :index, Appointment
+      can :show, Appointment.where(patient_id: user.id)
+
+      can :index, Category
+
+      # Patient can see only personal or doctor profile
+      can :show, Doctor
+      can :show, User.find(user.id)
     end
 
     if user.doctor?
-      can :read, Appointment
-      can :add_recommendation, Appointment
+      # Doctor can add recommendations and see appointments which related to him
+      can :index, Appointment
+      can :show, Appointment.where(doctor_id: user.id)
+      can :add_recommendation, Appointment.where(doctor_id: user.id)
+
+      # Doctor can see all profiles
+      can :show, User
     end
   end
 end

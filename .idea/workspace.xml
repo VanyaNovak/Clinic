@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbb34b6a-7379-48ed-94b2-d4f4c7e7fc76" name="Changes" comment="create appointments behavior">
+    <list default="true" id="cbb34b6a-7379-48ed-94b2-d4f4c7e7fc76" name="Changes" comment="admin page fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dashboards/doctor_dashboard.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboards/doctor_dashboard.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dashboards/patient_dashboard.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboards/patient_dashboard.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dashboards/user_dashboard.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboards/user_dashboard.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/appointments_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/appointments_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/categories_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/categories_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/ability.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/ability.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/appointments/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/appointments/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +141,7 @@
       <workItem from="1673650518889" duration="1239000" />
       <workItem from="1673735834024" duration="6187000" />
       <workItem from="1673783693581" duration="599000" />
-      <workItem from="1673876210594" duration="17735000" />
+      <workItem from="1673876210594" duration="19822000" />
     </task>
     <task id="LOCAL-00004" summary="add models">
       <created>1672848002732</created>
@@ -237,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673924289707</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="admin page fix">
+      <created>1673925022241</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1673925022241</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +280,7 @@
     <MESSAGE value="add avatars" />
     <MESSAGE value="add aws s3 prod config" />
     <MESSAGE value="create appointments behavior" />
-    <option name="LAST_COMMIT_MESSAGE" value="create appointments behavior" />
+    <MESSAGE value="admin page fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin page fix" />
   </component>
 </project>

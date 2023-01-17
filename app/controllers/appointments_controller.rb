@@ -1,5 +1,4 @@
-class AppointmentsController < HomeController
-  load_and_authorize_resource # CanCanCan
+class AppointmentsController < BaseController
   def index
     current_user.doctor? ? @appointments = Appointment.where(doctor_id: current_user.id) : @appointments = Appointment.where(patient_id: current_user.id)
 
