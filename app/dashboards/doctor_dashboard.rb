@@ -73,8 +73,6 @@ class DoctorDashboard < Administrate::BaseDashboard
     avatar
     phone_number
     remember_created_at
-    reset_password_sent_at
-    reset_password_token
     type
   ].freeze
 

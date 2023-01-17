@@ -70,8 +70,6 @@ class PatientDashboard < Administrate::BaseDashboard
     password
     avatar
     remember_created_at
-    reset_password_sent_at
-    reset_password_token
     type
   ].freeze
 
