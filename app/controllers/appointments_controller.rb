@@ -15,6 +15,7 @@ class AppointmentsController < BaseController
   end
 
   def create
+    #return flash.now("Doctor is busy, please try again later") if Doctor.find(appointment_params[:doctor_id]).busy?
     @appointment = Appointment.new(appointment_params)
 
     if @appointment.save

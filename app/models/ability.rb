@@ -22,7 +22,7 @@ class Ability
       # Doctor can add recommendations and see appointments which related to him
       can :index, Appointment
       can :show, Appointment.where(doctor_id: user.id)
-      can :add_recommendation, Appointment.where(doctor_id: user.id)
+      can :add_recommendation, Appointment
 
       # Doctor can see all profiles
       can :show, User
