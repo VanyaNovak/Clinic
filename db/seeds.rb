@@ -6,7 +6,6 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-=begin
 categories = Category.create(
   [
      {
@@ -41,7 +40,12 @@ categories.each do |category|
     )
   end
 end
-=end
-10.times do
-  Appointment.create(title: Faker::Lorem.word, doctor_id: Doctor.last.id, patient_id: Patient.last.id)
-end
+
+# Admin
+User.create(
+  first_name: Faker::Name.first_name,
+  last_name: Faker::Name.last_name,
+  phone_number: "068123456",
+  password: password,
+  type: "Administrator",
+)

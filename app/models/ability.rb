@@ -16,6 +16,7 @@ class Ability
       # Patient can see only personal or doctor profile
       can :show, Doctor
       can :show, User.find(user.id)
+      can :update, User.find(user.id)
     end
 
     if user.doctor?
@@ -26,6 +27,7 @@ class Ability
 
       # Doctor can see all profiles
       can :show, User
+      can :update, User.find(user.id)
     end
   end
 end
