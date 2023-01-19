@@ -25,5 +25,17 @@ RSpec.describe "Appointments", type: :request do
         expect(Appointment.last.attributes).to include(appointment_attrs.stringify_keys)
       end
     end
+
+    context "when doctor have to many appointments" do
+      let!(:appointments) { create_list(:appointment, 10, doctor: doctor, patient: patient) }
+      it "does not create appointment and redirect to categories page" do
+        post appointments_path, params: { appointment: appointment_attrs }
+
+        expect(response).to redirect_to categories_path
+        expect(Appointment.count).to eq 10
+        expect(Appointment.last.attributes).not_to include(appointment_attrs[:title])
+
+      end
+    end
   end
 end
