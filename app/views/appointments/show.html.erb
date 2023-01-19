@@ -50,10 +50,10 @@
       <div>
         <%= "Appointment status: #{@appointment.status}" %>
       </div>
-      <div class="my-4">Recommendation:</div>
       <div>
         <% if current_user.patient? || @appointment.completed? %>
           <div class="grid-rows-2">
+            <div class="my-4">Recommendation:</div>
             <div>
               <%= text_area(:appointment, :recommendation, readonly: true, class: "block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500") %>
             </div>
@@ -61,6 +61,7 @@
         <% elsif can? :add_recommendation, Appointment %>
           <%= form_with model: @appointment, url: appointments_path, method: :put, local: true do |f| %>
             <%= f.hidden_field :appointment_id, value: @appointment.id %>
+            <%= f.label :recommendation %>
             <%= f.text_area :recommendation, class: "block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" %>
             <div class="mt-4">
               <%= f.submit "Add recommendation", class: 'inline-block bg-blue-600 text-white text-sm px-4 py-2 leading-none border rounded border-white hover:border-transparent hover:bg-blue-500 mt-4 lg:mt-0 mr-6' %>

@@ -68,7 +68,6 @@ group :development, :test do
   gem 'pry', '~> 0.13.1'
   gem "rspec-rails"
   gem 'factory_bot_rails'
-  gem "capybara"
 end
 
 group :development do
@@ -84,6 +83,7 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
 end
