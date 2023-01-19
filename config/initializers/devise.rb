@@ -311,5 +311,5 @@ Devise.setup do |config|
   config.sign_out_via = :get
   # frozen_string_literal: true
 
-  config.navigational_formats = ['*/*', :html, :turbo_stream]
+  config.navigational_formats = ['*/*', :html, :turbo_stream, :json]
 end
