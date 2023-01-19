@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbb34b6a-7379-48ed-94b2-d4f4c7e7fc76" name="Changes" comment="add feature tests">
+    <list default="true" id="cbb34b6a-7379-48ed-94b2-d4f4c7e7fc76" name="Changes" comment="add test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +52,8 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="RSpec.Appointments">
-    <configuration name="Appointments POST /appointments creates appointment" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="RSpec.Appointments POST /appointments when doctor have to many appointments">
+    <configuration name="Appointments POST /appointments when doctor have to many appointments" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="clinic" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -75,7 +77,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATHS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Appointments POST /appointments creates appointment" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Appointments POST /appointments when doctor have to many appointments" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -257,11 +259,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="RSpec.Appointments POST /appointments when doctor have to many appointments" />
         <item itemvalue="RSpec.Appointments" />
         <item itemvalue="Ruby.appointments" />
         <item itemvalue="RSpec.Appointments POST /appointments with valid attrs" />
         <item itemvalue="RSpec.Appointments POST /appointments with invalid attrs" />
-        <item itemvalue="RSpec.Appointments POST /appointments creates appointment" />
       </list>
     </recent_temporary>
   </component>
@@ -312,7 +314,7 @@
       <workItem from="1673983054115" duration="896000" />
       <workItem from="1673986893470" duration="11017000" />
       <workItem from="1674088427795" duration="9607000" />
-      <workItem from="1674098078028" duration="4477000" />
+      <workItem from="1674098078028" duration="5946000" />
     </task>
     <task id="LOCAL-00004" summary="add models">
       <created>1672848002732</created>
@@ -468,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674101808559</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add test">
+      <created>1674103126410</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1674103126410</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +513,8 @@
     <MESSAGE value="refactoring of controllers" />
     <MESSAGE value="add tests" />
     <MESSAGE value="add feature tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add feature tests" />
+    <MESSAGE value="add test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/clinic@User_phone_number_validation_with_invalid_phone_number.rcov" NAME="User phone number validation with invalid phone number Coverage Results" MODIFIED="1674054886012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="clinic" />
@@ -515,6 +525,7 @@
     <SUITE FILE_PATH="coverage/clinic@Appointments_POST__appointments_creates_appointment.rcov" NAME="Appointments POST /appointments creates appointment Coverage Results" MODIFIED="1674097242604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="clinic" />
     <SUITE FILE_PATH="coverage/clinic@User_phone_number_validation.rcov" NAME="User phone number validation Coverage Results" MODIFIED="1674055001241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="clinic" />
     <SUITE FILE_PATH="coverage/clinic@Appointments.rcov" NAME="Appointments Coverage Results" MODIFIED="1674101445345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="clinic" />
+    <SUITE FILE_PATH="coverage/clinic@Appointments_POST__appointments_when_doctor_have_to_many_appointments.rcov" NAME="Appointments POST /appointments when doctor have to many appointments Coverage Results" MODIFIED="1674103095154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="clinic" />
     <SUITE FILE_PATH="coverage/clinic@Appointments_POST__appointments_with_valid_attrs.rcov" NAME="Appointments POST /appointments with valid attrs Coverage Results" MODIFIED="1674097629975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="clinic" />
     <SUITE FILE_PATH="coverage/clinic@user_spec.rcov" NAME="user_spec Coverage Results" MODIFIED="1674055393854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="clinic" />
     <SUITE FILE_PATH="coverage/clinic@User.rcov" NAME="User Coverage Results" MODIFIED="1674089195067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="clinic" />
