@@ -1,6 +1,7 @@
 class AppointmentsController < BaseController
   def index
-    current_user.doctor? ? @appointments = Appointment.where(doctor_id: current_user.id) : @appointments = Appointment.where(patient_id: current_user.id)
+    all_appointments = Appointment.all.includes(:doctors, :patients)
+    current_user.doctor? ? @appointments = all_appointments.where(doctor_id: current_user.id) : @appointments = all_appointments.where(patient_id: current_user.id)
 
     @new_appointments = @appointments.where(status: Appointment::NEW)
     @completed_appointments = @appointments.where(status: Appointment::COMPLETED)
